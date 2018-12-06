@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    mathcLabels:
+    matchLabels:
       component: worker
   template:
     metadata:
@@ -14,5 +14,5 @@ spec:
       containers:
         - name: worker
           image: sprab/multi-worker
-          
+
 
